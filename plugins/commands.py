@@ -369,7 +369,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            InputMediaAnimation("https://media.giphy.com/media/YOUR_GIF_ID/giphy.gif")
         )
         me2 = (await client.get_me()).mention
         await query.message.edit_text(
@@ -394,7 +394,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            InputMediaAnimation("https://media.giphy.com/media/YOUR_GIF_ID/giphy.gif")
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -419,7 +419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            InputMediaAnimation("https://media.giphy.com/media/YOUR_GIF_ID/giphy.gif")
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
