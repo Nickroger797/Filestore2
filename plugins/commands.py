@@ -57,8 +57,8 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         me2 = (await client.get_me()).mention
-        await message.reply_photo(
-            photo=random.choice(PICS),
+        await message.reply_animation(
+            animation="https://media.giphy.com/media/YOUR_GIF_LINK/giphy.gif",
             caption=script.START_TXT.format(message.from_user.mention, me2),
             reply_markup=reply_markup
         )
